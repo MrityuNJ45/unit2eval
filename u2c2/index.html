@@ -19,8 +19,9 @@
        
         justify-content: space-between;
         margin: auto; 
-        border-radius: 10px;
+       border-radius: 20px;
         background-color: blue;
+        margin-bottom: 40px;
 
       }
       #banner>div{
@@ -49,6 +50,7 @@
         margin-top: 10px;
         padding: 5px;
         border-radius: 5px;
+        border: 1px solid transparent;
       }
       #banner>div:nth-child(1)>h1{
         margin-top: 50px;
@@ -64,10 +66,11 @@
         grid-template-rows: 400px;
         gap: 20px;
         margin: auto;
+        margin-bottom: 40px;
       }
       #services>div{
-        
-        border: 1px solid red;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       
       }
       #services>div>img{
         width: 100%;
@@ -83,6 +86,34 @@
 
       }
       
+      
+      #works>div{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,300px);
+        gap: 40px 20px;
+        margin: auto;
+        margin-top: 40px;
+         margin-bottom: 40px; 
+        
+      }
+      #works>div>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+      }
+      #works>div>div>img{
+        width: 100%;
+        
+      }
+      #works>div>div>h3{
+        margin-left: 10px;
+      }
+      #works>div>div>p{
+        font-size: 14px;
+        text-align: left;
+        margin-left: 10px;
+            
+      }
 
       /* Medium Screen */
       @media only screen and (min-width: 500px) and (max-width: 768px) {
@@ -99,6 +130,17 @@
        
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 400px 400px;
+        
+        
+        
+      }
+      #works>div{
+        width: 100%;
+        
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,300px);
+        
+       
         
         
       }
@@ -119,7 +161,17 @@
         width: 100%;
        
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 400px 400px 400px;
+        /* grid-template-rows: 400px 400px 400px;
+         */
+        
+      }
+      #works>div{
+        width: 100%;
+        
+        grid-template-columns: repeat(1,1fr);
+        /* grid-template-rows: repeat(8,300px); */
+        gap: 20px;
+       
         
         
       }
@@ -165,6 +217,30 @@
         <p>Find experienced doctors across all specialties</p>
         <div>
           <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+          <h3>Dentist</h3>
+        <p>Teething trouble? Schedule a dental checkup</p></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dental checkup</p></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dental checkup</p></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dental checkup</p></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dental checkup</p></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dental checkup</p></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dental checkup</p></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+          <p>Teething trouble? Schedule a dental checkup</p></div>
         </div>
       </div>
     </div>
