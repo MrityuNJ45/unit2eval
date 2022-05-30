@@ -10,13 +10,15 @@
         margin: 0px;
         padding: 0px;
       }
+      
+      
       #banner{
         display: flex;
-        width: 80%;
+         width: 80%; 
         height: 300px;
        
         justify-content: space-between;
-        margin: auto;
+        margin: auto; 
         border-radius: 10px;
         background-color: blue;
 
@@ -55,7 +57,32 @@
       #banner>div:nth-child(1)>p{
         color: white;
       }
+      #services{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 400px;
+        gap: 20px;
+        margin: auto;
+      }
+      #services>div{
+        
+        border: 1px solid red;
+      }
+      #services>div>img{
+        width: 100%;
+        height: 80%;
+      }
+      #services>div>h3{
+        margin-left: 10px;
 
+      }
+      #services>div>p{
+        text-align: left;
+        margin-left: 10px;
+
+      }
+      
 
       /* Medium Screen */
       @media only screen and (min-width: 500px) and (max-width: 768px) {
@@ -67,6 +94,15 @@
         #banner>div{
           width: auto;
         }
+        #services{
+        width: 100%;
+       
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 400px 400px;
+        
+        
+      }
+        
       }
 
       /* Small Screen */
@@ -79,6 +115,14 @@
         #banner>div{
           width: auto;
         }
+        #services{
+        width: 100%;
+       
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 400px 400px 400px;
+        
+        
+      }
       }
     </style>
   </head>
@@ -95,13 +139,27 @@
       </div>
       <div id="services">
         <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video consultations.</h3>
+          <p>connect within 60 secs</p>
+        </div>
+        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video consultations.</h3>
+          <p>connect within 60 secs</p></div>
+        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video consultations.</h3>
+          <p>connect within 60 secs</p></div>
+        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video consultations.</h3>
+          <p>connect within 60 secs</p></div>
+        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video consultations.</h3>
+          <p>connect within 60 secs</p></div>
+        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video consultations.</h3>
+          <p>connect within 60 secs</p></div>
+        </div>
       <div id="works">
         <h1>Book an appointment for an in-clinic consultation</h1>
         <p>Find experienced doctors across all specialties</p>
